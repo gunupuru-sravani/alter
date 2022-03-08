@@ -1,0 +1,8 @@
+create table student(sno number(2),sname varchar2(10),sgroup varchar(10),maths number(2),phy number(2),computer number(2));
+desc student;
+insert into student values(1,'chaithu','mpcs',90,95,99);
+insert into student values(2,'jaya','mpcs',95,94,98);
+select * from student;
+select sum(maths+phy+computer) from student where sno=1 ;
+select sum(maths) from student;
+select avg(maths) from student;
